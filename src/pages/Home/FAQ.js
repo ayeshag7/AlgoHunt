@@ -74,7 +74,7 @@ export const FAQ = () => {
               <p className="mt-8 text-slate-400 max-md:max-w-full">
                 Whether you're curious about our services, or need help with an issue, we're here to answer your questions. Check out our frequently asked questions below or reach out to our support team.
               </p>
-              <a href="#" className="flex gap-2.5 self-start mt-8 font-medium text-sky-400">
+              <a href="https://github.com/ayeshag7" className="flex gap-2.5 self-start mt-8 font-medium text-sky-400">
                 <span>More FAQs</span>
                 <FiPlus className="shrink-0 w-6 aspect-square" />
               </a>
