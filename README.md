@@ -25,15 +25,11 @@ This repository contains the frontend code for a custom email platform that allo
   - White label customization for agencies.
   - User branding options (name, logo, color scheme).
 
-- **White Label Agency Customization:**
-  - Platform branding customization (name, color scheme, logo).
-  - User branding instructions and customization options.
-
 ## Tech Stack
 
-- **Frontend:** React / Angular / Vue.js (Choose the appropriate one)
-- **Backend:** Node.js / Ruby on Rails / Django (Integration done by the backend team)
-- **Database:** MySQL / PostgreSQL / MongoDB (Handled by the backend team)
+- **Frontend:** React + Tailwind CSS
+- **Backend:** Node + Express
+- **Database:** PostgreSQL + Prisma ORM
 - **APIs Integrated:**
   - Whois API
   - Entri Connect API
@@ -84,16 +80,6 @@ This repository contains the frontend code for a custom email platform that allo
     yarn build
     ```
 
-## White Label Customization
-
-For agencies looking to white-label this platform, follow these steps:
-
-1. **Navigate to the settings page:**
-   Customize the platform name, color scheme, and logo.
-
-2. **User Branding:**
-   Agencies can provide users with options to customize their branding, including business name, logo, and color scheme.
-
 
 ## Acknowledgments
 
@@ -104,4 +90,3 @@ For agencies looking to white-label this platform, follow these steps:
 - [OpenAI](https://openai.com/)
 
 ---
-
