@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Custom Email Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository contains the frontend code for a custom email platform that allows users to create email accounts using their existing domain. The platform is designed to be user-friendly and automated, providing an easy setup process for users with little to no technical experience. It includes a subscription model and offers white label capabilities for agencies.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Registration and Login:**
+  - Sign up via paid subscription or activation code.
+  - Integration with Stripe and PayPal for payment processing.
+  - 7-day free trial for subscription plans.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dashboard:**
+  - Manage emails (Inbox, Sent, Drafts, Templates).
+  - User profile customization.
+  - Email composition with AI Writing Assistant and Template Builder.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Email Composition Interface:**
+  - Drag-and-drop email template builder.
+  - AI-generated suggestions for email content.
 
-### `npm test`
+- **Settings:**
+  - Account and subscription management.
+  - White label customization for agencies.
+  - User branding options (name, logo, color scheme).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **White Label Agency Customization:**
+  - Platform branding customization (name, color scheme, logo).
+  - User branding instructions and customization options.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React / Angular / Vue.js (Choose the appropriate one)
+- **Backend:** Node.js / Ruby on Rails / Django (Integration done by the backend team)
+- **Database:** MySQL / PostgreSQL / MongoDB (Handled by the backend team)
+- **APIs Integrated:**
+  - Whois API
+  - Entri Connect API
+  - Stripe API
+  - PayPal API
+  - OpenAI API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+    ```bash
+    git clone https://github.com/yourusername/custom-email-platform.git
+    cd custom-email-platform
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Environment Variables:**
+   Create a `.env` file in the root directory and add the necessary environment variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```plaintext
+    REACT_APP_API_URL=<Backend API URL>
+    REACT_APP_STRIPE_PUBLIC_KEY=<Your Stripe Public Key>
+    REACT_APP_PAYPAL_CLIENT_ID=<Your PayPal Client ID>
+    REACT_APP_OPENAI_API_KEY=<Your OpenAI API Key>
+    ```
 
-## Learn More
+4. **Run the application:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Build for production:**
 
-### Code Splitting
+    ```bash
+    npm run build
+    # or
+    yarn build
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## White Label Customization
 
-### Analyzing the Bundle Size
+For agencies looking to white-label this platform, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Navigate to the settings page:**
+   Customize the platform name, color scheme, and logo.
 
-### Making a Progressive Web App
+2. **User Branding:**
+   Agencies can provide users with options to customize their branding, including business name, logo, and color scheme.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Whois API](https://www.whoisxmlapi.com/)
+- [Entri Connect API](https://www.entri.io/)
+- [Stripe](https://stripe.com/)
+- [PayPal](https://www.paypal.com/)
+- [OpenAI](https://openai.com/)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
